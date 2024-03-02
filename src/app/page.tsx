@@ -14,8 +14,8 @@ export default function Home() {
       <div className="hero-overlay bg-opacity-40"></div>
       <div className="hero-content text-center text-neutral-content">
         <div className="text-headline">
-          <LightHeading title="Welcome to the My Viz app" />
-          <LightSubHeading title="I Create, share, and explore Data Stories" />
+          <LightHeading title="Tales of data" />
+          <LightSubHeading title="let the numbers tell a story" />
           <button
             type="submit"
             className="btn bg-button text-buttonText hover:bg-buttonText hover:text-button hover:border-button"
@@ -24,8 +24,8 @@ export default function Home() {
           </button>
           <div className="w-full">
             <GridBox
-              heading1="Unlock the Power of Stories Hidden in Data"
-              heading2="Gaining Insights Through the Lens of Data Science"
+              heading1="The Data"
+              heading2="The story"
               content1=<div>
                 <p>
                   Data has a story to tell. It is up to us to discover the tales
@@ -33,7 +33,14 @@ export default function Home() {
                   and exploring data stories.
                 </p>
               </div>
-              content2="Through data science we will discover the tales data has to tell"
+              content2=
+              <div>
+              <p>
+                Data science is a powerful tool for gaining insights. It is
+                through the lens of data science that we can gain a deeper
+                understanding of the world around us.
+              </p>
+              </div>
               buttonText="Continue"
             />
             <div>
