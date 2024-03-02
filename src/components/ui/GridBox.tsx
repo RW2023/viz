@@ -7,6 +7,7 @@ interface Props {
   content1: ReactNode;
   heading2: string;
   content2: ReactNode;
+  buttonText?: string;
 }
 
 const GridBox: FC<Props> = ({
