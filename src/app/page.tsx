@@ -3,6 +3,23 @@ import GridBox from '@/components/ui/GridBox';
 import LightHeading from '@/components/ui/LightHeading';
 import LightSubHeading from '@/components/ui/LightSubHeading';
 
+const content1 = (
+  <div>
+    <p>
+      Data has a story to tell. It is up to us to discover the tales hidden within. My Viz app is a platform for creating, sharing, and exploring data stories.
+    </p>
+  </div>
+);
+
+const content2 = (
+  <div>
+    <p>
+      Data science is a powerful tool for gaining insights. It is through the lens of data science that we can gain a deeper understanding of the world around us.
+    </p>
+  </div>
+);
+
+
 export default function Home() {
   return (
     <div
@@ -26,22 +43,8 @@ export default function Home() {
             <GridBox
               heading1="The Data"
               heading2="The story"
-              content1=<div>
-                <p>
-                  Data has a story to tell. It is up to us to discover the tales
-                  hidden within. My Viz app is a platform for creating, sharing,
-                  and exploring data stories.
-                </p>
-              </div>
-              content2=
-              <div>
-              <p>
-                Data science is a powerful tool for gaining insights. It is
-                through the lens of data science that we can gain a deeper
-                understanding of the world around us.
-              </p>
-              </div>
-              buttonText="Continue"
+              content1= {content1}
+              content2= {content2}
             />
             <div>
               <p>Much love for the hero</p>{' '}
