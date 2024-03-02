@@ -1,7 +1,8 @@
-import SubHeading from '@/components/ui/SubHeading';
+//src/app/page.tsx
 import GridBox from '@/components/ui/GridBox';
 import LightHeading from '@/components/ui/LightHeading';
 import LightSubHeading from '@/components/ui/LightSubHeading';
+import Attribution from '@/components/ui/Attribution';
 
 const content1 = (
   <div>
@@ -43,22 +44,14 @@ export default function Home() {
             <GridBox
               heading1="The Data"
               heading2="The story"
-              content1= {content1}
-              content2= {content2}
+              content1={content1}
+              content2={content2}
             />
-            <div>
-              <p>Much love for the hero</p>{' '}
-              <span>
-                courtesy{' '}
-                <a href="https://unsplash.com/@dawson2406?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                  Stephen Dawson
-                </a>{' '}
-                on{' '}
-                <a href="https://unsplash.com/photos/turned-on-monitoring-screen-qwtCeJ5cLYs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">
-                  Unsplash
-                </a>
-              </span>
-            </div>
+            <Attribution
+              link="https://unsplash.com/@dawson2406?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+              artist="Stephen Dawson"
+              artistAttribution="https://unsplash.com/photos/turned-on-monitoring-screen-qwtCeJ5cLYs?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            />
           </div>
         </div>
       </div>
