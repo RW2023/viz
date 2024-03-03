@@ -14,7 +14,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="business">
       <body>
-        <main>{children}</main>
+        <main className='flex flex-col justify-center items-center'>
+          {children}
+          </main>
       </body>
     </html>
   );
