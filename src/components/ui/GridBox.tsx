@@ -9,6 +9,8 @@ interface Props {
   content2: ReactNode;
   buttonText1?: string;
   buttonText2?: string;
+  href1?: string;
+  href2?: string;
 }
 
 const GridBox: FC<Props> = ({
@@ -18,36 +20,43 @@ const GridBox: FC<Props> = ({
   content2,
   buttonText1,
   buttonText2,
+  href1,
+  href2,
 }): JSX.Element => {
+  const renderButton = (buttonText?: string, href?: string) => {
+    const button = (
+      <button
+        type="submit"
+        className="btn bg-button text-buttonText hover:bg-buttonText hover:text-button hover:border-button"
+      >
+        {buttonText}
+      </button>
+    );
+
+    // If href is provided, wrap the button in a Link, otherwise, return the button directly
+    return href ? (
+      <Link href={href} passHref>
+        <a className="inline-block">{button}</a>
+      </Link>
+    ) : (
+      button
+    );
+  };
+
   return (
     <div className="grid md:grid-cols-2 gap-2 mt-4 bg-black text-secondary border border-1 p-2 rounded-md m-5 sm:w-full">
       <div className="bg-highlight p-4 rounded shadow card-compact m-1 sm:m-0">
-        {/* 'Light' components have dark text outline applied to make them stand out against light backgrounds */}
         <LightSubHeading title={heading1} />
         <div className="card-body">
           <div className="text-lg">{content1}</div>
-          <button
-            type="submit"
-            className="btn bg-button text-buttonText hover:bg-buttonText hover:text-button hover:border-button"
-          >
-            {buttonText1}
-          </button>
+          {buttonText1 && renderButton(buttonText1, href1)}
         </div>
       </div>
       <div className="bg-highlight p-4 rounded shadow card-compact m-1 sm:m-0">
         <LightSubHeading title={heading2} />
         <div className="card-body">
           <div className="text-lg">{content2}</div>
-          <Link
-          href="/stories"
-          >
-            <button
-              type="submit"
-              className="btn bg-button text-buttonText hover:bg-buttonText hover:text-button hover:border-button"
-            >
-              {buttonText2}
-            </button>
-          </Link>
+          {buttonText2 && renderButton(buttonText2, href2)}
         </div>
       </div>
     </div>
