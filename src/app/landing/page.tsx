@@ -39,7 +39,7 @@ export default function page() {
           <div className="hero-overlay bg-opacity-40"></div>
           <div className="hero-content text-center text-neutral-content">
             <div className="text-headline">
-              <div className='w-full md:w-3/4 m-auto'>
+              <div className='w-full md:w-10/12 m-auto'>
                 <GridBox
                   heading1="The Data"
                   heading2="The story"

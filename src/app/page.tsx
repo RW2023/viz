@@ -57,7 +57,7 @@ export default function Home() {
           <div></div>
         </div>
       </div>
-      <div className="w-full md:w-3/4 m-auto">
+      <div className="w-full md:w-10/12 m-auto">
         <GridBox
           heading1="Data"
           content1={content1}
