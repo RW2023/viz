@@ -2,7 +2,7 @@
 import GridBox from '@/components/ui/GridBox';
 import Attribution from '@/components/ui/Attribution';
 import ArticleImage from '@/components/ui/ArticleImage';
-import Layout from '@/components/Layout';
+
 
 const content1 = (
     <div className="flex flex-1 flex-col justify-center items-center text-left">
@@ -29,7 +29,7 @@ const content2 = (
 
 export default function page() {
   return (
-    <Layout title='Landing Page' description='Landing Page'>
+    
         <div
           className="hero min-h-screen"
           style={{
@@ -57,6 +57,5 @@ export default function page() {
             </div>
           </div>
         </div>
-    </Layout>
   );
 }
