@@ -12,8 +12,8 @@ const ArticleImage: FC<Props> = ({ src, alt }): JSX.Element => {
       <Image
         src={src}
         alt={alt}
-        width={350}
-        height={350}
+        width={500}
+        height={500}
       />
     </div>
   );
