@@ -50,7 +50,7 @@ const GridBox: FC<Props> = ({
   };
 
   return (
-    <div className="grid md:grid-cols-2 gap-2 mt-4 bg-black text-secondary border border-1 p-1 rounded-md m-2 sm:w-ful md:w-full">
+    <div className="grid md:grid-cols-2 gap-2 mt-4 bg-black text-secondary border border-1  rounded-md m-2 sm:w-ful md:w-full">
       <div className="bg-highlight p-4 rounded shadow card-compact m-1 sm:m-0">
         <LightSubHeading title={heading1} />
         <div className="card-body">
