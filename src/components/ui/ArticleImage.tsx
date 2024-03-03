@@ -1,0 +1,21 @@
+import { FC } from 'react';
+import Image from 'next/image';
+
+interface Props {
+    src: string;
+    alt: string;
+}
+
+const ArticleImage: FC<Props> = ({ src, alt }): JSX.Element => {
+  return (
+    <div className="rounded bg-background p-2 shadow-lg border border-1 border-headline m-4">
+      <Image
+        src={src}
+        alt={alt}
+        width={400}
+        height={400}
+      />
+    </div>
+  );
+};
+export default ArticleImage;
