@@ -10,39 +10,39 @@ const Page: FC<Props> = (props): JSX.Element => {
   const table = {
     columns: [
       {
-        Header: 'Column 1',
+        Header: 'Data Set',
         accessor: 'col1',
       },
       {
-        Header: 'Column 2',
+        Header: 'Description',
         accessor: 'col2',
       },
       {
-        Header: 'Column 3',
+        Header: 'Link',
         accessor: 'col3',
       },
     ],
     data: [
       {
-        col1: 'Column 1, Row 1',
-        col2: 'Column 2, Row 1',
-        col3: 'Column 3, Row 1',
+        col1: 'Grocery Inventory',
+        col2: 'My Grocery inventory',
+        col3: 'Private',
       },
-      {
-        col1: 'Column 1, Row 2',
-        col2: 'Column 2, Row 2',
-        col3: 'Column 3, Row 2',
-      },
-      {
-        col1: 'Column 1, Row 3',
-        col2: 'Column 2, Row 3',
-        col3: 'Column 3, Row 3',
-      },
-      {
-        col1: 'Column 1, Row 4',
-        col2: 'Column 2, Row 4',
-        col3: 'Column 3, Row 4',
-      },
+    //   {
+    //     col1: 'Column 1, Row 2',
+    //     col2: 'Column 2, Row 2',
+    //     col3: 'Column 3, Row 2',
+    //   },
+    //   {
+    //     col1: 'Column 1, Row 3',
+    //     col2: 'Column 2, Row 3',
+    //     col3: 'Column 3, Row 3',
+    //   },
+    //   {
+    //     col1: 'Column 1, Row 4',
+    //     col2: 'Column 2, Row 4',
+    //     col3: 'Column 3, Row 4',
+    //   },
     ],
   };
 
@@ -75,6 +75,7 @@ const Page: FC<Props> = (props): JSX.Element => {
           content2={content2}
           buttonText1="original data"
           buttonText2="notebook"
+          href2="https://github.com/RW2023/grocery_py/blob/main/Grocery.ipynb"
         />
       </div>
     </div>
