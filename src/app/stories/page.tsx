@@ -67,15 +67,16 @@ const Page: FC<Props> = (props): JSX.Element => {
   return (
     <div>
       <Heading title="The Stories" />
-      <GridBox
-        heading1="The Dataset"
-        content1={content1}
-        heading2="The Initial Inquiry"
-        content2={content2}
-        buttonText1='original data'
-        buttonText2='notebook'
-
-      />
+      <div className="w-full md:w-3/4 m-auto">
+        <GridBox
+          heading1="The Dataset"
+          content1={content1}
+          heading2="The Initial Inquiry"
+          content2={content2}
+          buttonText1="original data"
+          buttonText2="notebook"
+        />
+      </div>
     </div>
   );
 };
