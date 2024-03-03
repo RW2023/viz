@@ -1,5 +1,6 @@
 import { FC, ReactNode } from 'react';
 import LightSubHeading from './LightSubHeading';
+import Link from 'next/link';
 
 interface Props {
   heading1: string;
@@ -37,12 +38,16 @@ const GridBox: FC<Props> = ({
         <LightSubHeading title={heading2} />
         <div className="card-body">
           <div className="text-lg">{content2}</div>
-          <button
-            type="submit"
-            className="btn bg-button text-buttonText hover:bg-buttonText hover:text-button hover:border-button"
+          <Link
+          href="/stories"
           >
-            {buttonText2}
-          </button>
+            <button
+              type="submit"
+              className="btn bg-button text-buttonText hover:bg-buttonText hover:text-button hover:border-button"
+            >
+              {buttonText2}
+            </button>
+          </Link>
         </div>
       </div>
     </div>
