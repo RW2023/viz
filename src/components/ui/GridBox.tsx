@@ -35,11 +35,17 @@ const GridBox: FC<Props> = ({
 
     // If href is provided, wrap the button in a Link, otherwise, return the button directly
     return href ? (
-      <Link href={href} passHref>
-        <a className="inline-block">{button}</a>
-      </Link>
+        href.startsWith('http') ? (
+            <a href={href} target="_blank" rel="noopener noreferrer">
+                {button}
+            </a>
+        ) : (
+            <Link href={href}>
+                {button}
+            </Link>
+        )
     ) : (
-      button
+        button
     );
   };
 
