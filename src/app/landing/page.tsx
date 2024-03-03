@@ -5,12 +5,16 @@ import ArticleImage from '@/components/ui/ArticleImage';
 import Layout from '@/components/Layout';
 
 const content1 = (
-  <div className="flex flex-1 flex-col justify-center items-center text-left">
-    <ArticleImage src={'/csv.jpg'} alt={'chart'} />
-    <p>
-      Here I will explore various data sets and the insights that can be gained
-    </p>
-  </div>
+    <div className="flex flex-1 flex-col justify-center items-center text-left">
+        <ArticleImage src={'/csv.jpg'} alt={'chart'} />
+        <p>
+            Here is where I will list the data sets i am working with and any relevant information about them.
+        </p>
+        <br />
+        <p>
+                Real world data isn&apos;t neat and tidy. I have come to understand the importance of data cleaning and preprocessing. I will share my experiences and the tools I use to clean and preprocess data.
+        </p>
+    </div>
 );
 
 const content2 = (
@@ -18,7 +22,7 @@ const content2 = (
     <ArticleImage src={'/present.jpg'} alt={'chart'} />
     <p>
       Data science is a powerful tool for gaining insights. I will analyze the
-      data and tell the story
+      data and tell the story. Would you like to hear a story?
     </p>
   </div>
 );
@@ -35,7 +39,7 @@ export default function page() {
           <div className="hero-overlay bg-opacity-40"></div>
           <div className="hero-content text-center text-neutral-content">
             <div className="text-headline">
-              <div>
+              <div className='w-full md:w-3/4 m-auto'>
                 <GridBox
                   heading1="The Data"
                   heading2="The story"
