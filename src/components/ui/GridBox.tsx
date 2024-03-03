@@ -19,12 +19,12 @@ const GridBox: FC<Props> = ({
   buttonText2,
 }): JSX.Element => {
   return (
-    <div className="grid md:grid-cols-2 gap-4 mt-4 bg-headline text-secondary border border-1 p-2 rounded-md text-xl">
-      <div className="bg-highlight p-4 rounded shadow card-compact m-1">
+    <div className="grid md:grid-cols-2 gap-2 mt-4 bg-black text-secondary border border-1 p-2 rounded-md m-10 sm:w-full">
+      <div className="bg-highlight p-4 rounded shadow card-compact m-1 sm:m-0">
         {/* 'Light' components have dark text outline applied to make them stand out against light backgrounds */}
         <LightSubHeading title={heading1} />
         <div className="card-body">
-          <div className="text-xl">{content1}</div>
+          <div className="text-lg">{content1}</div>
           <button
             type="submit"
             className="btn bg-button text-buttonText hover:bg-buttonText hover:text-button hover:border-button"
@@ -36,7 +36,7 @@ const GridBox: FC<Props> = ({
       <div className="bg-highlight p-4 rounded shadow card-compact m-1">
         <LightSubHeading title={heading2} />
         <div className="card-body">
-          <div className="text-xl">{content2}</div>
+          <div className="text-lg">{content2}</div>
           <button
             type="submit"
             className="btn bg-button text-buttonText hover:bg-buttonText hover:text-button hover:border-button"
