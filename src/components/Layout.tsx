@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import Head from 'next/head'; 
 import Navbar from './ui/Navbar';
+import Footer from './ui/Footer';
 
 interface RootLayoutProps {
   children: ReactNode;
@@ -20,11 +21,12 @@ export default function RootLayout({
         <meta name="description" content={description} />{' '}
       </Head>
       <body>
-        <main>
-            <Navbar />
-            {children}
-            </main>
+        <main className="flex flex-col justify-center items-center">
+          <Navbar />
+          {children}
+        </main>
       </body>
+      <Footer />
     </html>
   );
 }
