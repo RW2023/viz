@@ -35,38 +35,38 @@ export default function Home() {
   
   return (
     <>
-    <div
-      className="hero min-h-screen"
-      style={{
-        backgroundImage: 'url(/data.webp)',
-      }}
-    >
-      <div className="hero-overlay bg-opacity-40"></div>
-      <div className="hero-content text-center text-neutral-content">
-        <div className="max-w-md bg-base-300 border border-1 rounded-md w-full m-5 p-3 flex flex-1 flex-col justify-center items-center">
-          <div className="bg-highlight border border-1 rounded w-full m-5 p-3 flex flex-1 flex-col justify-center items-center">
-            <LightHeading title="Data Science" />
-            <LightSubheading title="Analysis and Machine Learning" />
+      <div
+        className="hero min-h-screen"
+        style={{
+          backgroundImage: 'url(/data.webp)',
+        }}
+      >
+        <div className="hero-overlay bg-opacity-40"></div>
+        <div className="hero-content text-center text-neutral-content">
+          <div className="max-w-md bg-base-300 border border-1 rounded-md w-full m-5 p-3 flex flex-1 flex-col justify-center items-center">
+            <div className="bg-highlight border border-1 rounded w-full m-5 p-3 flex flex-1 flex-col justify-center items-center">
+              <LightHeading title="Data Science" />
+              <LightSubheading title="Analysis and Machine Learning" />
+            </div>
+            <Link href="/landing">
+              <button className="btn btn-primary" type="submit">
+                Explore
+              </button>
+            </Link>
           </div>
-          <Link href="/landing">
-            <button className="btn btn-primary" type="submit">
-              Explore
-            </button>
-          </Link>
+          <div></div>
         </div>
-        <div></div>
       </div>
-    </div>
-    <div className="flex flex-1 flex-col justify-center items-center w-3/4">
+      <div className="w-full md:w-3/4 m-auto">
         <GridBox
-        heading1="Data"
-        content1={content1}
-        buttonText1="Explore Data"
-        heading2="The story"
-        content2={content2}
-        buttonText2="Explore Stories"
-      />
-    </div>
+          heading1="Data"
+          content1={content1}
+          buttonText1="Explore Data"
+          heading2="The story"
+          content2={content2}
+          buttonText2="Explore Stories"
+        />
+      </div>
     </>
   );
 }
