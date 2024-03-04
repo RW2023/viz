@@ -49,7 +49,10 @@ export default function Home() {
               <LightSubheading title="Analysis and Machine Learning" />
             </div>
             <Link href="/landing">
-              <button className="btn btn-primary" type="submit">
+              <button
+                className="btn hover:bg-button hover:text-buttonText bg-buttonText text-button rounded-lg p-3 border-headline"
+                type="submit"
+              >
                 Explore
               </button>
             </Link>
