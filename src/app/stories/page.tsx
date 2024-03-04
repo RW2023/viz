@@ -66,7 +66,7 @@ const Page: FC<Props> = (props): JSX.Element => {
   );
 
   return (
-    <Hero img='story.webp'>
+    <Hero img="story.webp">
       <div>
         <LightHeading title="The Stories" />
         <div className="w-full md:w-10/12 m-auto">
@@ -77,7 +77,7 @@ const Page: FC<Props> = (props): JSX.Element => {
             content2={content2}
             buttonText1="original data"
             buttonText2="notebook"
-            href2="https://github.com/RW2023/grocery_py/blob/main/Grocery.ipynb"
+            href2="https://colab.research.google.com/drive/1mLzNCBjpHaX1O5ZGZVIqfCwaXC33YeDJ?usp=sharing"
           />
         </div>
       </div>
