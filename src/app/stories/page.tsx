@@ -49,7 +49,7 @@ const Page: FC<Props> = (props): JSX.Element => {
 
   const content1 = (
     <div className="flex flex-1 flex-col justify-center items-center text-left">
-      <ArticleImage src={'/csv.jpg'} alt={'data'} />
+      <ArticleImage src={'/data.webp'} alt={'data'} />
       {/* Pass the table object as props to DataTable */}
       <DataTable table={table} />
     </div>
@@ -57,7 +57,7 @@ const Page: FC<Props> = (props): JSX.Element => {
 
   const content2 = (
     <div className="flex flex-1 flex-col justify-center items-center text-left">
-      <ArticleImage src={'/question.webp'} alt={'question mark'} />
+      <ArticleImage src={'/question2.webp'} alt={'question mark'} />
       <p>
         Here I will explore various data sets and the insights that can be
         gained

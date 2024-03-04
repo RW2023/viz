@@ -9,7 +9,7 @@ import ArticleImage from "@/components/ui/ArticleImage";
 export default function Home() {
   const content1 = (
     <div className="flex flex-1 flex-col justify-center items-center text-left">
-      <ArticleImage src={'/csv.jpg'} alt={'data'} />
+      <ArticleImage src={'/data.webp'} alt={'data'} />
       <p>
         Here is where I will list the data sets i am working with and any
         relevant information about them.
@@ -25,7 +25,7 @@ export default function Home() {
 
     const content2 = (
       <div className="flex flex-1 flex-col justify-center items-center text-left">
-        <ArticleImage src={'/present.jpg'} alt={'presentation'} />
+        <ArticleImage src={'/story.webp'} alt={'presentation'} />
         <p>
           Here I will explore various data sets and the insights that can be
           gained
