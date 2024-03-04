@@ -67,7 +67,7 @@ const Page: FC<Props> = (props): JSX.Element => {
 
   return (
     <Hero img="story.webp">
-      <div>
+      
         <LightHeading title="The Stories" />
         <div className="w-full md:w-10/12 m-auto">
           <GridBox
@@ -80,7 +80,7 @@ const Page: FC<Props> = (props): JSX.Element => {
             href2="https://colab.research.google.com/drive/1mLzNCBjpHaX1O5ZGZVIqfCwaXC33YeDJ?usp=sharing"
           />
         </div>
-      </div>
+      
     </Hero>
   );
 };
