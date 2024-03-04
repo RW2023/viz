@@ -1,8 +1,9 @@
 import GridBox from '@/components/ui/GridBox';
-import Heading from '@/components/ui/LightHeading';
+import LightHeading from '@/components/ui/LightHeading';
 import { FC } from 'react';
 import ArticleImage from '@/components/ui/ArticleImage';
 import DataTable from '@/components/DataTable';
+import Hero from '@/components/ui/Hero';
 
 interface Props {}
 
@@ -65,20 +66,22 @@ const Page: FC<Props> = (props): JSX.Element => {
   );
 
   return (
-    <div>
-      <Heading title="The Stories" />
-      <div className="w-full md:w-10/12 m-auto">
-        <GridBox
-          heading1="The Dataset"
-          content1={content1}
-          heading2="The Initial Inquiry"
-          content2={content2}
-          buttonText1="original data"
-          buttonText2="notebook"
-          href2="https://github.com/RW2023/grocery_py/blob/main/Grocery.ipynb"
-        />
+    <Hero img='story.webp'>
+      <div>
+        <LightHeading title="The Stories" />
+        <div className="w-full md:w-10/12 m-auto">
+          <GridBox
+            heading1="The Dataset"
+            content1={content1}
+            heading2="The Initial Inquiry"
+            content2={content2}
+            buttonText1="original data"
+            buttonText2="notebook"
+            href2="https://github.com/RW2023/grocery_py/blob/main/Grocery.ipynb"
+          />
+        </div>
       </div>
-    </div>
+    </Hero>
   );
 };
 
