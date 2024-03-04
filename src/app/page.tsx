@@ -1,7 +1,7 @@
 //src/app/page.tsx
 
 import GridBox from "@/components/ui/GridBox";
-import LightHeading from "@/components/ui/LightHeading";
+import Heading from "@/components/ui/LightHeading";
 import LightSubheading from "@/components/ui/LightSubHeading"
 import Link from "next/link";
 import ArticleImage from "@/components/ui/ArticleImage";
@@ -44,9 +44,13 @@ export default function Home() {
         <div className="hero-overlay bg-opacity-40"></div>
         <div className="hero-content text-center text-neutral-content">
           <div className="max-w-md bg-none w-full m-5 p-3 flex flex-1 flex-col justify-center items-center">
-            <div className="bg-highlight border border-1 rounded w-full m-5 p-3 flex flex-1 flex-col justify-center items-center">
-              <LightHeading title="Data Science" />
-              <LightSubheading title="Analysis and Machine Learning" />
+            <div className="w-full m-5 p-3 flex flex-1 flex-col justify-center items-center">
+              <div className="text-button">
+                <Heading title="Welcome" />
+              </div>
+              <div className="bg-stroke border border-1 rounded text-secondary">
+                <LightSubheading title="Explore My Analysis and Machine Learning Workspace" />
+              </div>
             </div>
             <Link href="/landing">
               <button
@@ -62,12 +66,14 @@ export default function Home() {
       </div>
       <div className="w-full md:w-10/12 m-auto">
         <GridBox
-          heading1="Data"
+          heading1="The Data"
           content1={content1}
           buttonText1="Explore Data"
           heading2="The story"
           content2={content2}
           buttonText2="Explore Stories"
+          href1="/stories"
+          href2="/stories"
         />
       </div>
     </>
