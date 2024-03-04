@@ -56,7 +56,7 @@ const Page: FC<Props> = (props): JSX.Element => {
 
   const content2 = (
     <div className="flex flex-1 flex-col justify-center items-center text-left">
-      <ArticleImage src={'/present.jpg'} alt={'presentation'} />
+      <ArticleImage src={'/question.webp'} alt={'question mark'} />
       <p>
         Here I will explore various data sets and the insights that can be
         gained
