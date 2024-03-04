@@ -38,12 +38,12 @@ export default function Home() {
       <div
         className="hero min-h-screen"
         style={{
-          backgroundImage: 'url(/data.webp)',
+          backgroundImage: 'url(/question.webp)',
         }}
       >
         <div className="hero-overlay bg-opacity-40"></div>
         <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md bg-base-300 border border-1 rounded-md w-full m-5 p-3 flex flex-1 flex-col justify-center items-center">
+          <div className="max-w-md bg-none w-full m-5 p-3 flex flex-1 flex-col justify-center items-center">
             <div className="bg-highlight border border-1 rounded w-full m-5 p-3 flex flex-1 flex-col justify-center items-center">
               <LightHeading title="Data Science" />
               <LightSubheading title="Analysis and Machine Learning" />
