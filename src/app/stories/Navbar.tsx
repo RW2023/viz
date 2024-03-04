@@ -150,11 +150,13 @@ const Navbar = () => {
             </li> */}
             <li>
               <details>
-                <summary><SubHeading title='Story' /></summary>
+                <summary>
+                  <SubHeading title="Story" />
+                </summary>
                 <ul className="p-2 bg-base-100 rounded-t-none">
-                  <li>
-                    <a>Grocery</a>
-                  </li>
+                  <Link href={'/stories/grocery'}>
+                    <li onClick={closeNavbar}>Grocery</li>
+                  </Link>
                   {/* <li>
                     <a>Link 2</a>
                   </li> */}
