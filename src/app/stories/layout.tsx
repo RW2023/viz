@@ -1,6 +1,7 @@
 import Footer from '@/components/ui/Footer';
 import Navbar from './Navbar';
 import type { Metadata } from 'next';
+import '@/app/globals.css';
 
 
 

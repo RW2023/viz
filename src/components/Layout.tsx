@@ -2,6 +2,7 @@ import type { ReactNode } from 'react';
 import Head from 'next/head'; 
 import Navbar from './ui/Navbar';
 import Footer from './ui/Footer';
+import '@/app/globals.css';
 
 interface RootLayoutProps {
   children: ReactNode;
